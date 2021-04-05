@@ -8,11 +8,8 @@ tags: ["Git", "VCS"]
 categories: ["Tips and Tricks", "Productivity"]
 ---
 
-Who of us has not been there: After staging your changes and typing 
-```bash
-git commit
-```
-in your command prompt, you are already not certain about the actual commit contents anymore.
+Who of us has not been there:
+After staging your changes and typing `git commit` in your command prompt, you are already not certain about the actual commit contents anymore.
 Did you really stage that one line in that one file?
 What information should you provide with your commit message?
 

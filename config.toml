@@ -62,6 +62,8 @@ rss = 25
 # Home page profile
 [params.home.profile]
 enable = true
+# URL of avatar shown in home page
+avatarURL = "/android-chrome-384x384.png"
 # uBlogger CHANGED | 0.2.7 title shown in home page (HTML format is supported)
 title = "Vladimir Medovy"
 # subtitle shown in home page

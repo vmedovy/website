@@ -1,7 +1,7 @@
 ---
 author: "Vladimir Medovy"
 date: 2021-03-27
-linktitle: welcome
+lastmod: 2021-03-27
 title: Welcome to my blog!
 ---
 

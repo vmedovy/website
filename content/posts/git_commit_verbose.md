@@ -1,9 +1,11 @@
 ---
-title: "Improve your `git commit` experience"
+author: "Vladimir Medovy"
 date: 2021-04-05
 lastmod: 2021-04-05
-tags: ["Git", "tips and tricks", "development", "version control", "productivity"]
-author: "Vladimir Medovy"
+title: "Improve your `git commit` experience"
+
+tags: ["Git", "VCS"]
+categories: ["Tips and Tricks", "Productivity"]
 ---
 
 Who of us has not been there: After staging your changes and typing 

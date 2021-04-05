@@ -1,3 +1,167 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://www.medovy.de/"
+languageCode = "en"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+title = "Vladimir Medovy"
+# Change the default theme to be use when building the site with Hugo
+theme = "uBlogger"
+enableEmoji = true
+
+[menu]
+
+[[menu.main]]
+identifier = "posts"
+# you can add extra information before the name (HTML format is supported), such as icons
+pre = ""
+# you can add extra information after the name (HTML format is supported), such as icons
+post = ""
+name = "Posts"
+url = "/posts/"
+# title will be shown when you hover on this menu link
+title = ""
+weight = 1
+
+[[menu.main]]
+identifier = "tags"
+pre = ""
+post = ""
+name = "Tags"
+url = "/tags/"
+title = ""
+weight = 2
+
+[[menu.main]]
+identifier = "categories"
+pre = ""
+post = ""
+name = "Categories"
+url = "/categories/"
+title = ""
+weight = 3
+
+[markup]
+
+[markup.highlight]
+noClasses = false # noClasses = false is a necessary configuration (uBlogger)
+codeFences = true
+lineNos = true
+tabWidth = 4
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+# uBlogger theme version
+version = "2.0.X"
+dateFormat = "02 January 2006"
+
+[params.home]
+# uBlogger NEW | 0.2.0 amount of RSS pages
+rss = 25
+
+# Home page profile
+[params.home.profile]
+enable = true
+# uBlogger CHANGED | 0.2.7 title shown in home page (HTML format is supported)
+title = "Vladimir Medovy"
+# subtitle shown in home page
+subtitle = "Programmer, Developer, Father"
+# whether to show social links
+social = true
+# uBlogger NEW | 0.2.0 disclaimer (HTML format is supported)
+disclaimer = ""
+
+# Home page posts
+[params.home.posts]
+enable = true
+# special amount of posts in each home posts page
+paginate = 6
+
+# Footer config
+[params.footer]
+enable = true
+# uBlogger NEW | 0.2.0 Custom content (HTML format is supported)
+custom = ''
+# uBlogger NEW | 0.2.0 whether to show Hugo and theme info
+hugo = false
+# uBlogger NEW | 0.2.0 whether to show copyright info
+copyright = true
+# uBlogger NEW | 0.2.0 whether to show the author
+author = true
+# Site creation time
+since = 2020
+# license info (HTML format is supported)
+license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>'
+
+[params.social]
+GitHub = "vmedovy"
+Xing = "Vladimir_Medovy"
+Email = "blog@vladimir.medovy.de"
+RSS = true # uBlogger NEW | 0.2.0
+
+[params.search]
+enable = true
+# type of search engine ("lunr", "algolia")
+type = "lunr"
+# max index length of the chunked content
+contentLength = 4000
+# placeholder of the search bar
+placeholder = "Search... (w*ldcards supported)"
+#  max number of results length
+maxResultLength = 10
+#  snippet length of the result
+snippetLength = 30
+#  HTML tag name of the highlight part in results
+highlightTag = "em"
+#  whether to use the absolute URL based on the baseURL in search index
+absoluteURL = false
+
+[params.page]
+# uBlogger NEW | 1.0.0 main subject for articles, by default classic. more on themes}
+theme = "wide"
+
+[params.page.share]
+enable = true
+Twitter = true
+Facebook = true
+Linkedin = true
+Whatsapp = true
+Pinterest = false
+Tumblr = false
+HackerNews = true
+Reddit = true
+VK = false
+Buffer = false
+Xing = true
+Line = false
+Instapaper = false
+Pocket = false
+Digg = false
+Stumbleupon = false
+Flipboard = false
+Weibo = false
+Renren = false
+Myspace = false
+Blogger = false
+Baidu = false
+Odnoklassniki = false
+Evernote = false
+Skype = false
+Trello = false
+Mix = false
+
+[params.analytics]
+enable = true
+
+# Google Analytics
+[params.analytics.google]
+id = "UA-122367518-1"
+# whether to anonymize IP
+anonymizeIP = true
+
+[privacy]
+
+[privacy.googleAnalytics]
+anonymizeIP = true
+respectDoNotTrack = true
+useSessionStorage = true
